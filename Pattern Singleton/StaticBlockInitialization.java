@@ -1,6 +1,7 @@
 package pattern.singleton;
 
 public class StaticBlockInitialization {
+	
 	private static StaticBlockInitialization instance;
 	
 	// 생성자
@@ -25,4 +26,5 @@ public class StaticBlockInitialization {
 		System.out.println("It's print() method in StaticBlockInitalization instance.");
 		System.out.println("instance hashCode > " + instance.hashCode());
 	}
+	
 }

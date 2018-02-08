@@ -20,4 +20,34 @@ public class EagerInitialization {
 		System.out.println("It's print() method in EagerInitialization instance");
 		System.out.println("instance hashCode > " + instance.hashCode());
 	}
+	
+	public static void main(String[]args){
+		A a = new A();
+		a.instance = getInstance();
+		
+		B b = new B();
+		b.instance = getInstance();
+		
+		C c = new C();
+		c.instance = getInstance();
+		
+		D d = new D();
+		d.instance = getInstance();
+	}
+}
+
+class A{
+	EagerInitialization instance = null;
+}
+
+class B{
+	EagerInitialization instance = null;
+}
+
+class C{
+	EagerInitialization instance = null;
+}
+
+class D{
+	EagerInitialization instance = null;
 }
