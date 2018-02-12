@@ -52,5 +52,4 @@ ConnectionMaker는 인터페이스로 구현되어서 N사 커넥션 클래스�
 __설명__
 UserDAOClient 클래스를 만들고, 해당 클래스가 DB 커넥션에 대한 책임을 가지게 하였다. 그리고 UserDAO는 그 책임에서 분리시켰다. UserDAOClient에서 UserDAO가 사용할 ConnectionMaker 구현 클래스를 결정할 수 있도록 하였다. 그리고 ConnectionMaker는 앞서서 말했다시피 인터페이스로 구현되어서 객체간의 결합을 느슨하게 해주었다.
 
-__그림__
-![그림으로 표현한 구조](./Image/Ref1.png)
+![그림으로 표현한 구조](./Image/Ref1.jpg)
